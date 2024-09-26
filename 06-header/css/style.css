@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial';
+}
+
+header{
+    background-color: #6F2EFE;
+    height: 60px;
+}
+
+header main{
+    width: 800px;
+    margin: 0px auto;
+}
+
+header main figure{
+    float: left;
+}
+
+header main figure img{   
+    width: 54px; /* largura */
+    height: 54px;   /* altura */ 
+}
+
+header main nav{
+    float: left;
+    margin: 18px 50px 0px 50px;
+}
+
+header main nav a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}

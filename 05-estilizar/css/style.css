@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #2a2c2c;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Arial';
+}
+
+section{
+    background-color: #b2b8b8;
+    color: #222222;
+    width: 380px; /* largura */
+    margin: 100px 0px 0px 0px;
+    padding: 20px 50px;
+}
+
+header p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 14px;
+    color: #666666;
+}

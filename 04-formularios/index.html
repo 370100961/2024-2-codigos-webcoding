@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulários</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulários</h1>
+        </header>
+
+        <section>
+            <form method="get" action="destino.html">
+               <div>
+                    <label>Digite seu nome</label>
+                    <input 
+                        type="text" 
+                        name="nome-completo" 
+                        placeholder="Digite seu nome completo"
+                        />
+               </div>
+
+                <div>
+                    <label>Digite sua idade</label>
+                    <input type="number" name="idade" />
+                </div>
+
+                <div>
+                    <label>Digite seu email</label>
+                    <input 
+                        type="email" 
+                        name="email-principal"
+                        placeholder="Ex.: carlosrangelxavier@professor.com.br" />
+                </div>
+
+                <div>
+                    <label>Sua data de nascimento</label>
+                    <input type="date" name="data-nascimento" />
+                </div>
+
+                <div>
+                    <label>Digite sua senha</label>
+                    <input type="password" name="senha" />
+                </div>
+
+                <h3>Dados de Entrega</h3>
+                <label>Escolha a cidade de entrega</label>
+                <select name="cidade">
+                    <option value="MV">Missão Velha</option>
+                    <option value="BA">Barbalha</option>
+                    <option value="JDN">Juazeiro do Norte</option>
+                    <option value="CR">Crato</option>
+                </select>
+
+                <div>
+                    <label>Logradouro</label>
+                    <input type="radio" 
+                        name="zona" 
+                        value="Rural"> Zona Rural
+                    <input 
+                        type="radio" 
+                        name="zona" 
+                        value="Urbana"> Zona Urbana
+                </div>
+
+                <div>
+                    <label>Quem pode receber?</label>
+                    <input type="checkbox"
+                        value="mae"
+                        name="recebedor"
+                        > Mãe
+                    <input type="checkbox"
+                        value="irmao"
+                        name="recebedor"
+                    > Irmã(o)
+                    <input type="checkbox"
+                        value="vizinho"
+                        name="recebedor"> Vizinho
+                </div>
+
+                <div>
+                    <input type="submit" /> <!-- Envia -->
+                    <input type="reset" />  <!-- Resatar -->
+                </div>
+
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; Aula Webcoding - Rangel Xavier</p> 
+        </footer>
+    </body>
+</html>
