@@ -1,0 +1,39 @@
+body{
+    background-color: #222222;
+    font-family: 'Arial';
+    color: #fff;
+    margin: 0px;
+    padding:0px;
+}
+
+header{
+    background-color: #fff;
+}
+
+
+section a{
+    color: #f9ac9a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+ul li{
+    color: black;
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
