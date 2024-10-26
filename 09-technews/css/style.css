@@ -17,14 +17,6 @@ body{
     height: 100%;
 }
 
-.flex{
-    display: flex;
-}
-
-.space-between{
-    justify-content: space-between;
-}
-
 header{
     padding: 19px 0px;
 }
@@ -55,12 +47,79 @@ header section > a{
 
 main section{
     width: 1312px;
-    margin: 0 auto;
+    margin: 64px auto;
 }
 
 main header{
     padding: 0px;
+    text-align: center;
 }
+
+main header small{
+    padding: 8px;
+    background-color: var(--amarelo);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+main header h1{
+    font-size: 48px;
+    padding: 8px 0px;
+}
+
+main header p{
+    font-size: 14px;
+    color: var(--cinza);
+    max-width: 354px;
+    margin: 0 auto;
+}
+
+main section > section{
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+main section .card{
+    width: 368px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--cinzaClaro);
+    border-radius: 8px;
+}
+
+main section .card:hover{
+    background-color: var(--preto);
+}
+
+main section .card:first-child{
+    background-color: red;
+}
+
+main section .card:last-child{
+    background-color: blue;
+}
+
+main section .card a{
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main section .card:hover a{
+    color: var(--branco);
+}
+
+main section .card p{
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+
+
 
 
 footer{
