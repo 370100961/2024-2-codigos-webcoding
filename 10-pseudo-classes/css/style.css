@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+div.circulo{
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+div.circulo:first-child{
+    width: 400px;
+}
+
+/* : pseudo-classes */
+section div:hover{
+    background-color: blue;
+}
+
+/* :: pseudo-elementos, elementos imaginario ou virtualizados */
+section div:first-child::before{
+    width: 10px;
+    height: 10px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 10px;
+    content: '';
+    display: block;
+}
+
+section div:first-child::after{
+    width: 10px;
+    height: 10px;
+    margin: 20px;
+    background-color: red;
+    border-radius: 10px;
+    content: '';
+    display: block;
+}

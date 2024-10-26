@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'sans-serif';
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+        "header header header "
+        "navigation navigation aside"
+        "content content aside"
+        "footer footer footer";
+    
+}
+
+.header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+.navigation{
+    background-color: blue;
+    grid-area: navigation;
+}
+
+.content{
+    background-color: chocolate;
+    grid-area: content;
+    
+}
+
+.aside{
+    background-color: darkgreen;
+    grid-area: aside;
+}
+
+.footer{
+    background-color: gray;
+    grid-area: footer;
+}

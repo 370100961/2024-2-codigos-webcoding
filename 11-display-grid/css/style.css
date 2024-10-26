@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+div.circulo{
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+
+section{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+}
