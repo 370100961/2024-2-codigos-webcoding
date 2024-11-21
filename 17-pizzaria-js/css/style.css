@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bege: #ffdcbf;
+    --texto: #44413f;
+    --button: #1581ff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bege);
+    color: var(--texto);
+}
+
+ul {
+    list-style-position: inside;
+}
+
+main {
+    display: flex;
+    gap: 32px;
+    padding: 54px;
+    align-items: center;
+}
+
+main section:first-child {
+    background-color: white;
+    padding: 44px;
+    border-radius: 8px;
+}
+
+main section:first-child .form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+main h4 {
+    margin-bottom: 24px;
+}
+
+main label {
+    color: #aca9a7;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-text label {
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.input-text input {
+    padding: 14.4px 12px;
+    border-radius: 4px;
+    min-width: 534px;
+    border-width: 1px;
+    border-color: #aca9a7;
+}
+
+.sabores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.tamanhos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 490px;
+}
+
+.adicionais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+
+button {
+    background-color: var(--button);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border-width: 0px;
+    float: right;
+}
+
+main section:last-child {
+    padding: 44px;
+}
+
+main section:last-child p,
+main section:last-child li {
+    margin-bottom: 16px;
+}
+
+#total h2 {
+    font-size: 48px;
+}

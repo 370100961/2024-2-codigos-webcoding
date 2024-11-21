@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+        <title>Pizzaria JS - Faça seu pedido</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="form">
+                    <h1>🍕 Fazer pedido</h1>
+                    <div class="input-text">
+                        <label>Seu nome</label>
+                        <input type="text" />
+                    </div>
+
+                    <div>
+                        <h4>Sabor</h4>
+
+                        <div class="sabores">
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Calabresa" />
+                                <label class="input-radio-label">Calabresa</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Marguerita" />
+                                <label class="input-radio-label">Marguerita</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Portuguesa" />
+                                <label class="input-radio-label">Portuguesa</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Frango" />
+                                <label class="input-radio-label">Frango</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Napolitana" />
+                                <label class="input-radio-label">Napolitana</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Bolonhesa" />
+                                <label class="input-radio-label">Bolonhesa</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="A moda" />
+                                <label class="input-radio-label">A moda</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Holandesa" />
+                                <label class="input-radio-label">Holandesa</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="sabor" value="Nordestina" />
+                                <label class="input-radio-label">Nordestina</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>Tamanho</h4>
+
+                        <div class="tamanhos">
+                            <div class="input-radio">
+                                <input type="radio" name="tamanho" value="Pequena" />
+                                <label class="input-radio-label">Pequena</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="tamanho" value="Média" />
+                                <label class="input-radio-label">Média</label>
+                            </div>
+
+                            <div class="input-radio">
+                                <input type="radio" name="tamanho" value="Grande" />
+                                <label class="input-radio-label">Grande</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>Adicionais</h4>
+
+                        <div class="adicionais">
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Bacon" />
+                                <label class="input-check-label">Bacon</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Milho" />
+                                <label class="input-check-label">Milho</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Queijo Coalho" />
+                                <label class="input-check-label">Queijo Coalho</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Calabresa" />
+                                <label class="input-check-label">Calabresa</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Cheddar" />
+                                <label class="input-check-label">Cheddar</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Frango" />
+                                <label class="input-check-label">Frango</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Cream Cheese" />
+                                <label class="input-check-label">Cream Cheese</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Carne de Sol" />
+                                <label class="input-check-label">Carne de Sol</label>
+                            </div>
+
+                            <div class="input-check">
+                                <input type="checkbox" name="adicionais" value="Queijo do Reino" />
+                                <label class="input-check-label">Queijo do Reino</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button onclick="fazerPedido()">Fazer pedido</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h1>💰 Tabela de Preços</h1>
+                    <p>Os valores das pizzas são de acordo com seus tamanhos</p>
+                    <ul>
+                        <li><strong>Pizza Pequena: </strong>R$ 25,00</li>
+                        <li><strong>Pizza Média: </strong>R$ 35,00</li>
+                        <li><strong>Pizza Grande: </strong>R$ 50,00</li>
+                    </ul>
+                    <p>Os adicionais pode serem colocados livremente, porém o valor de cada adicional é de <strong>R$ 5,00</strong></p>
+
+                    <div id="total">
+                        <p>O valor total do pedido é de:</p>
+                        <h2>R$ <strong>00</strong>,00</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/index.js"></script>
+    </body>
+</html>
